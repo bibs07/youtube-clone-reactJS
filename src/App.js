@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <Header />
       {/* sidebar */}
-      <div className="container">
+      <div className="app__container">
         <Sidebar />
         <Recommended />
       </div>
