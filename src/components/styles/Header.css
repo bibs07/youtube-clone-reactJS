@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.header__left,
+.header__center,
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 20px;
+  color: red;
+  height: 35px !important;
+  width: 35px !important;
+}
+
+.header__center {
+  border: 1px solid black;
+}
+
+.header__center > input {
+  width: 25vw;
+  padding: 0.15rem;
+  border: none;
+  outline: none;
+}
+.header__center button {
+  border: none;
+  border-left: 1px #edebeb solid;
+  background-color: #edebeb;
+  cursor: pointer;
+  width: 3rem;
+}
+
+.header__rightIcon {
+  margin: 0 0.5rem;
+}
