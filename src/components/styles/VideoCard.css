@@ -1,0 +1,29 @@
+.videoCard {
+  width: 270px;
+  margin: 0 1rem 1rem 0;
+}
+
+.videoCard__thumbnail {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.videoCard__info {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.videoCard__info > img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.videoCard__text {
+  margin-left: 0.5rem;
+}
+
+.videoCard__text > p {
+  color: gray;
+}
