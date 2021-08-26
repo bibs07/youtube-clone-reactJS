@@ -20,6 +20,10 @@
   word-wrap: break-word;
 }
 
+.channelRow__description > p {
+  color: gray;
+}
+
 .channelRow__heading {
   display: flex;
 }

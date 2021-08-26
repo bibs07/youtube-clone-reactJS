@@ -16,7 +16,7 @@ export const VideoRow = ({
         <img src={thumbnail} alt="thumbnail" />
         <div className="videoRow__text">
           <h3>{title}</h3>
-          <p>
+          <p className="videoRow__vidDetail">
             {channel} • {subscribers} Subscribers {views} views • {time}
           </p>
           <p>{description}</p>

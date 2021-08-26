@@ -26,3 +26,11 @@
 .videoRow__text > h3 {
   margin-bottom: 0.75rem;
 }
+
+.videoRow__vidDetail {
+  color: gray;
+}
+
+.videoRow__vidDetail + p {
+  font-size: 1.1rem;
+}
