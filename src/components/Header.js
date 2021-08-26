@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/Header.css";
+import { Link } from "react-router-dom";
 
 //Importing icons from material UI
 import VideoCallIcon from "@material-ui/icons/VideoCall";
@@ -11,6 +12,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 export const Header = () => {
+  const [search, setSearch] = useState("");
   return (
     <div className="header">
       <div className="header__left">
@@ -19,9 +21,17 @@ export const Header = () => {
         <p>Premium</p>
       </div>
       <div className="header__center">
-        <input type="text" />
-        <button>
-          <SearchIcon />
+        <input
+          type="text"
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+          value={search}
+        />
+        <button onClick={(e) => e.preventDefault()}>
+          <Link to={`/search/${search}`}>
+            <SearchIcon />
+          </Link>
         </button>
       </div>
       <div className="header__right">

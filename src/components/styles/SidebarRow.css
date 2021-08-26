@@ -44,7 +44,7 @@
 
 /* Mobile view */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 540px) {
   .sidebarRow {
     display: flex;
     flex-direction: column;

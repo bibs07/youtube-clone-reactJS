@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
-  top: 0;
   z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: white;
 }
 
@@ -14,6 +15,10 @@
 .header__right {
   display: flex;
   align-items: center;
+}
+
+.header__left {
+  margin-right: 0.5rem;
 }
 
 .header__logo {
@@ -40,7 +45,30 @@
   cursor: pointer;
   width: 3rem;
 }
+.header__center a {
+  text-decoration: none;
+  color: grey;
+}
+
+.header__right {
+  margin-right: 20px;
+}
 
 .header__rightIcon {
   margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 540px) {
+  .header {
+    width: 100%;
+  }
+  .header__center > input {
+    width: 20vw;
+  }
+  .header__right {
+    margin-right: 20px;
+  }
+  .header__rightIcon {
+    margin: 0 0.2rem;
+  }
 }
